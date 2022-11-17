@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 10;
+    margin: 10;
+    min-height: 100;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+header {
+    padding: 5px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    background-color: #d8a47f;
+    padding: 5px;
+
+  }
+  section {
+    width: 200px;
+    height: 200px;
+    text-align: inline-center;
+    padding: 10px;
+    margin: 10px;
+    border: 10px solid black;
+    display: inline-block;
+  }
+  
+.BigPicture {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue; 
+    margin: 10px 20px;
+    padding: 20px;
+    border: 10px solid;
+    color: #00008B;
+    position: relative;
+  left: 400px;
+}
+
+.picture{
+    position: relative;
+    left: 200px;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+    header {
+      background: #772014;
+    }
+  }
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: #bb8588;
+    }
+  }
+  
+  /* Small smartphones - image placeholders change color */
+  @media screen and (max-width: 576px) {
+    .sample-img {
+      background-color: #8ac4ff;
+    }
+  }
